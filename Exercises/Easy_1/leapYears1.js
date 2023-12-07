@@ -1,14 +1,11 @@
-/* 
-Problem: 
-
--write a function that takes 1 argument (number)
-- determine is the number in the argument is evenly 
-divisible by 4, 100 and 400.
--input: number
--output: boolean.
-- the number take by the argument needs to be 
-a positive integer.
-
-
-
-*/
+function isLeapYear (year) {
+    if (year > 0) {
+        if ((year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0) && (year % 400 === 0)) {
+            return true;
+        } else if (year % 4 === 0 && year % 100 === 0) {
+            return false;
+        } else {
+            return false;
+        }
+    }
+}
